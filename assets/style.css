@@ -1,0 +1,156 @@
+#display {
+    width: 1000px;
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hangman-1 {
+    background-image: url("./images/hangman_1.png");
+}
+
+.hangman-2 {
+    background-image: url("./images/hangman_2.png");
+}
+
+.hangman-3 {
+    background-image: url("./images/hangman_3.png");
+}
+
+.hangman-4 {
+    background-image: url("./images/hangman_4.png");
+}
+
+.hangman-5 {
+    background-image: url("./images/hangman_5.png");
+}
+
+.hangman-6 {
+    background-image: url("./images/hangman_6.png");
+}
+
+.hangman-7 {
+    background-image: url("./images/hangman_7.png");
+}
+
+.hangman-8 {
+    background-image: url("./images/hangman_8.png");
+}
+
+.hangman-9 {
+    background-image: url("./images/hangman_9.png");
+}
+
+.hangman-10 {
+    background-image: url("./images/hangman_10.png");
+}
+
+.hangman-11 {
+    background-image: url("./images/hangman_11.png");
+}
+
+/*Prompt*/
+#message {
+    color: white;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 3.2rem;
+}
+
+#prompt {
+    top: 35%;
+    left: 8%;
+}
+
+.play-btn {
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    cursor: pointer;
+    border: 3px solid white;
+    color: white;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.play-btn:hover,
+.play-btn:focus {
+    background-color: white;
+    color: rgb(2, 51, 28);
+}
+
+/*Letters Display*/
+#letters-display {
+    color: white;
+    padding: 2rem;
+    font-size: 4rem;
+    font-family: 'Gochi Hand', cursive;
+    top: 70%;
+}
+
+.letter-group {
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+.underscore {
+    width: 2.5rem;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    display: inline-block;
+    top: 75%;
+}
+
+.letter {
+    margin: 0;
+    width: 36px;
+}
+
+.letter-hidden {
+    opacity: 0;
+}
+/*Keyboard container*/
+#keyboard-container {
+    width: 400px;
+    height: 680px;
+}
+
+.grid-container {
+    width: 90%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 2px solid rgb(66, 41, 27);
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.key {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(66, 41, 27);
+    border: none;
+    border-radius: 1rem;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.key:nth-last-child(2) {
+  grid-column-end: 4;
+}
+
+.key-active:hover {
+    background-color: rgb(163, 89, 89);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
