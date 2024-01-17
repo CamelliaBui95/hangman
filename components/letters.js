@@ -1,7 +1,6 @@
 import Letter from "./letter.js";
 
 class Letters {
-    
     lettersDisplay = document.getElementById("letters-display");
     lettersGroup = [];
 
@@ -10,6 +9,7 @@ class Letters {
         this.wordLength = 0;
         this.counter = 0;
         this.displayLetter = this.displayLetter.bind(this);
+        this.handler = null;
     }
 
     setWord(newWord) {
@@ -41,6 +41,13 @@ class Letters {
         this.lettersGroup[index].setLetter(letter);
         this.lettersGroup[index].displayLetter();
         this.counter++;
+
+        if (this.counter === this.wordLength && this.handler !== null)
+            this.handler();
+    }
+
+    addHandler(handler) {
+        this.handler = handler;
     }
 }
 

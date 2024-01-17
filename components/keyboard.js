@@ -55,7 +55,9 @@ class KeyBoard {
     }
 
     addListener(listener) {
-        this.letterDictionary.forEach((value, key) => value.addEventListener("click", () => listener(key)));
+        this.letterDictionary.forEach((value, key) => {
+            value.addEventListener("click", () => listener(key));
+        });
     }
 }
 
